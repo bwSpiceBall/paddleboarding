@@ -1,17 +1,21 @@
 import { Card, CardContent } from "./components/ui/card"
 import { Button } from "./components/ui/button"
+import { ComposableMap, Geographies, Geography } from "react-simple-maps"
+import '../features.json';
 
 export default function App() {
   return (
     <div className="flex w-full h-[80vh]">
       <div className="w-2/3 h-full">
-        <img
-          src="/placeholder.svg"
-          alt="Paddleboarding Spot Map"
-          width={800}
-          height={600}
-          className="w-full h-full object-cover"
-        />
+      <ComposableMap>
+        <Geographies geography="/features.json">
+          {({ geographies }) =>
+            geographies.map((geo) => (
+              <Geography key={geo.rsmKey} geography={geo} />
+            ))
+          }
+        </Geographies>
+      </ComposableMap> 
       </div>
       <div className="w-1/3 h-full p-6 overflow-auto">
         <div className="grid gap-4">
