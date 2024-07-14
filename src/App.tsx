@@ -1,21 +1,16 @@
 import { Card, CardContent } from "./components/ui/card"
 import { Button } from "./components/ui/button"
-import { ComposableMap, Geographies, Geography } from "react-simple-maps"
 import '../features.json';
+import { Map, Marker } from "pigeon-maps";
 
-export default function App() {
+export default function App() { 
   return (
     <div className="flex w-full h-[80vh]">
       <div className="w-2/3 h-full">
-      <ComposableMap>
-        <Geographies geography="/features.json">
-          {({ geographies }) =>
-            geographies.map((geo) => (
-              <Geography key={geo.rsmKey} geography={geo} />
-            ))
-          }
-        </Geographies>
-      </ComposableMap> 
+         {/* put map here */}
+          <Map height={840} width={1000} defaultCenter={[54.02013940885722, -4.462459976422213]} defaultZoom={6}>
+            <Marker width={50} anchor={[50.879, 4.6997]} />
+          </Map>
       </div>
       <div className="w-1/3 h-full p-6 overflow-auto">
         <div className="grid gap-4">
