@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.mainPage__app-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.mainPage__map_container {
+  width: 1000px;
+  height: 840px;
+}
+
+.mainPage__card-container {
+  padding-left: 1rem;
+  width: 20%;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
