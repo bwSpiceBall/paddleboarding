@@ -1,5 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export function Component() {
   return (
@@ -27,7 +27,9 @@ export function Component() {
                   className="w-full h-[200px] object-cover rounded-t-lg"
                 />
                 <div className="font-medium text-lg">Lake Tahoe</div>
-                <p className="text-muted-foreground">Serene waters and stunning mountain views.</p>
+                <p className="text-muted-foreground">
+                  Serene waters and stunning mountain views.
+                </p>
                 <Button size="sm">Choose</Button>
               </CardContent>
             </Card>
@@ -41,7 +43,9 @@ export function Component() {
                   className="w-full h-[200px] object-cover rounded-t-lg"
                 />
                 <div className="font-medium text-lg">Puget Sound</div>
-                <p className="text-muted-foreground">Explore the serene waters of the Pacific Northwest.</p>
+                <p className="text-muted-foreground">
+                  Explore the serene waters of the Pacific Northwest.
+                </p>
                 <Button size="sm">Choose</Button>
               </CardContent>
             </Card>
@@ -55,7 +59,9 @@ export function Component() {
                   className="w-full h-[200px] object-cover rounded-t-lg"
                 />
                 <div className="font-medium text-lg">Miami Beach</div>
-                <p className="text-muted-foreground">Paddle along the iconic South Florida coastline.</p>
+                <p className="text-muted-foreground">
+                  Paddle along the iconic South Florida coastline.
+                </p>
                 <Button size="sm">Choose</Button>
               </CardContent>
             </Card>
@@ -71,7 +77,9 @@ export function Component() {
                   className="w-full h-[200px] object-cover rounded-t-lg"
                 />
                 <div className="font-medium text-lg">Oahu, Hawaii</div>
-                <p className="text-muted-foreground">Paddle through the crystal-clear waters of the Pacific.</p>
+                <p className="text-muted-foreground">
+                  Paddle through the crystal-clear waters of the Pacific.
+                </p>
                 <Button size="sm">Choose</Button>
               </CardContent>
             </Card>
@@ -85,7 +93,9 @@ export function Component() {
                   className="w-full h-[200px] object-cover rounded-t-lg"
                 />
                 <div className="font-medium text-lg">Lake Minnetonka</div>
-                <p className="text-muted-foreground">Explore the serene lakes of the Midwest.</p>
+                <p className="text-muted-foreground">
+                  Explore the serene lakes of the Midwest.
+                </p>
                 <Button size="sm">Choose</Button>
               </CardContent>
             </Card>
@@ -99,7 +109,9 @@ export function Component() {
                   className="w-full h-[200px] object-cover rounded-t-lg"
                 />
                 <div className="font-medium text-lg">Biscayne Bay</div>
-                <p className="text-muted-foreground">Paddle through the crystal-clear waters of South Florida.</p>
+                <p className="text-muted-foreground">
+                  Paddle through the crystal-clear waters of South Florida.
+                </p>
                 <Button size="sm">Choose</Button>
               </CardContent>
             </Card>
@@ -107,5 +119,5 @@ export function Component() {
         </div>
       </div>
     </div>
-  )
+  );
 }
