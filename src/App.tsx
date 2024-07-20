@@ -14,7 +14,6 @@ import {
 } from "./components/ui/card";
 import { useState } from "react";
 import mapStyle from "./assets/mapStyle.json";
-
 import "./index.css";
 
 
@@ -38,7 +37,7 @@ export default function App() {
   }
 
   return (
-    <GMapsProvider apiKey="AIzaSyA92OgNXfxYTHkwqSCvAfy-2U6q70SPfsU">
+    <GMapsProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
       <div className="mainPage__app-container">
         <div className="mainPage__map_container">
           <Map 
