@@ -1,6 +1,5 @@
 import "../features.json";
 import {
-  APIProvider as GMapsProvider,
   Map,
   Marker,
 } from "@vis.gl/react-google-maps";
@@ -37,32 +36,30 @@ export default function App() {
   }
 
   return (
-    <GMapsProvider apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
-      <div className="mainPage__app-container">
-        <div className="mainPage__map_container">
-          <Map 
-            {...mapProps}
-            onClick={(e) => handleMapClick(e)} 
-            viewState={viewState}
-            >
-            <Marker position={markerPosition} />
-          </Map>
-        </div>
-        <div className="mainPage__card-container">
-          <Card>
-            <CardHeader>
-              <CardTitle>Paddling Lake</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Lorem ipsum</p>
-            </CardContent>
-            <CardFooter>
-              <p>Lorem Ipsum</p>
-            </CardFooter>
-          </Card>
-        </div>
+    <div className="mainPage__app-container">
+      <div className="mainPage__map_container">
+        <Map 
+          {...mapProps}
+          onClick={(e) => handleMapClick(e)} 
+          viewState={viewState}
+          >
+          <Marker position={markerPosition} />
+        </Map>
       </div>
-    </GMapsProvider>
+      <div className="mainPage__card-container">
+        <Card>
+          <CardHeader>
+            <CardTitle>Paddling Lake</CardTitle>
+            <CardDescription>Card Description</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p>Lorem ipsum</p>
+          </CardContent>
+          <CardFooter>
+            <p>Lorem Ipsum</p>
+          </CardFooter>
+        </Card>
+      </div>
+    </div>
   );
 }
